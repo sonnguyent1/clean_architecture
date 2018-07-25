@@ -1,7 +1,9 @@
 class ResponseSuccess(object):
+    SUCCESS = 'SUCCESS'
 
     def __init__(self, value=None):
         self.value = value
+        self.type = self.SUCCESS
 
     def __nonzero__(self):
         return True
